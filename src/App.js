@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { LoginTitle, LoginContainer, InputText, LabelText,MainContainer, ButtonDiv,ExtraDiv, Header } from './styles'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header>
+        <span>OCR + TRADUTOR</span>
+      </Header>
+      <MainContainer>
+        <LoginTitle>ENTRAR</LoginTitle>
+
+        <LoginContainer>
+          <LabelText>Nome de usuario</LabelText>
+          <InputText></InputText>
+          <LabelText>Senha</LabelText>
+          <InputText></InputText>
+
+        <ButtonDiv>
+          <div><button>Entrar</button></div>
+          <div><a href="#">Cancelar</a></div>
+        </ButtonDiv>
+        
+        <ExtraDiv>
+            <p>Não está cadastrado? </p> <a href="#">Cadastre-se aqui!</a>
+        </ExtraDiv>
+        
+        </LoginContainer>
+        
+      </MainContainer>
     </div>
+    
   );
 }
 
